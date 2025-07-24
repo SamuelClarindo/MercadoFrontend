@@ -199,7 +199,7 @@ export default function Dashboard() {
             <div className="w-8 h-8 bg-[#2b3034] rounded-lg flex items-center justify-center">
               <span className="text-white text-sm font-bold">B</span>
             </div>
-            <span className="font-semibold text-[#2b3034]">BonaFrutos</span>
+            <span className="font-semibold text-[#2b3034]">BonsFrutos</span>
           </div>
         </div>
 
@@ -528,7 +528,7 @@ export default function Dashboard() {
                     <XAxis dataKey="name" axisLine={false} tickLine={false} tick={{ fontSize: 12, fill: "#9291a5" }} />
                     <YAxis axisLine={false} tickLine={false} tick={{ fontSize: 12, fill: "#9291a5" }} />
                     <Tooltip content={<CustomProductQuantityTooltip />} cursor={{ fill: 'rgba(43, 48, 52, 0.1)' }} />
-                    <Bar dataKey="quantity" fill="#2b3034" radius={[10, 10, 0, 0]} barSize={30}/>
+                    <Bar dataKey="quantity" fill="#2b3034" radius={10} barSize={32} />
                   </BarChart>
                 </ResponsiveContainer>
               </CardContent>
@@ -680,6 +680,9 @@ export default function Dashboard() {
             </CardContent>
           </Card>
         </main>
+      </div>
+      <div style={{ position: 'fixed', bottom: '20px', left: '20px', zIndex: 1000 }}>
+        <img src="/logoboaa.png" alt="Logo" style={{ height: '80px' }} />
       </div>
     </div>
   )
